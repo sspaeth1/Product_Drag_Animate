@@ -2,4 +2,6 @@
 Product exploration | Click and drag sequence of images - using nick-jonas  jQuery 360 preview 
 
 Sample working URL:
-http://bit.do/Drag_Animate
+Short URL:	
+http://bit.do/fsCRA
+Traffic stats:	http://bit.do/fsCRA-
