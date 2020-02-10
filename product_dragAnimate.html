@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
 <meta name="Copyright" content=" 2013">
 <meta name="Designer" content="Shlomo Sam Spaeth">
-<meta name="description" content=" Click and Drag to view the product>
+<meta name="description" content=" Click and Drag to view the product">
 <meta name="keywords" content="Product interactive">
 <link href="main.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
@@ -22,107 +22,70 @@
 <script src="galleria/galleria-1.2.6.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <style type="text/css">
-<link href="galleria/themes/classic/galleria.classic.css" rel="stylesheet" type="text/css"><!--[if lt IE 7]>
+<link href="css/galleria.classic.css" rel="stylesheet" type="text/css"><!--[if lt IE 7]>
 
 
  .dock img { behavior: url(iepngfix.htc) }</style><![endif]-->
-
- 
-
         <link rel="stylesheet" href="css/360/360_main.css">
-
         <link href="webfonts/ss-pika.css" rel="stylesheet" />
-
-        
 
 </head>
 
-<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" marginwidth="0" marginheight="0" >
+  <body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" marginwidth="0" marginheight="0" >
+    <img src="assets/img/biochromatic_370_rainbow_horizontal.jpg" width="348" source="">
+        <div class="threesixty-wrapper">
+          <div class="ui">
+                        <div class="next ss-icon"><img src="assets/img/spons-right-arrow.png" alt="previous" width="20"></div>
+              <div class="prev ss-icon"><img src="assets/img/spons-left-arrow.png" alt="next" width="20" height="42"></div>
+        </div>
 
 
-<img src="images/biochromatic_370_rainbow_horizontal.jpg" width="348" source="">
+     <div class="threesixty" data-path="assets/img/src/washer_{index}.jpg" data-count="20">
+                        <!-- preloader here -->
+       <div class="ui-spinner">
+                                <span class="side side-left">
+                                    <span class="fill"></span>
+                                </span>
+                                <span class="side side-right">
+                                    <span class="fill"></span>
+                                </span>
+       </div>
+             		   <!-- end preloader -->
 
+                <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                    <script src="assets/js/jquery.threesixty.js"></script>
 
+                    <script>
+                        $(document).ready(function(){
 
-    <div class="threesixty-wrapper">
-    
-    
-    
-      <div class="ui">
-    
-                    <div class="next ss-icon"><img src="images/spons-right-arrow.png" alt="previous" width="20"></div>
-          <div class="prev ss-icon"><img src="images/spons-left-arrow.png" alt="next" width="20" height="42"></div>
-    
+                            var $threeSixty = $('.threesixty');
+                            $threeSixty.threeSixty({
+                                dragDirection: 'horizontal',
+                                useKeys: true,
+
+                                draggable: true
+                            });
+
+                            $('.next').click(function(){
+                                $threeSixty.nextFrame();
+                            });
+                            $('.prev').click(function(){
+                                $threeSixty.prevFrame();
+                            });
+                            $threeSixty.on('down', function(){
+                                $('.ui, h1, h2, .label, .examples').stop().animate({opacity:0}, 300);
+                            });
+                            $threeSixty.on('up', function(){
+                                $('.ui, h1, h2, .label, .examples').stop().animate({opacity:1}, 500);
+                            });
+                        });
+                    </script>
+
+                  <img src="images/label.png" alt="" class="label"/>
     </div>
-    
-                
-    
- <div class="threesixty" data-path="assets/img/src/washer_{index}.jpg" data-count="20">
-    
-                    <!-- put your preloader here -->
-        
-   <div class="ui-spinner">
-        
-                            <span class="side side-left">
-                                <span class="fill"></span>
-                            </span>
-                            <span class="side side-right">
-                                <span class="fill"></span>
-                            </span>
-   </div>
-        
-         		   <!-- end preloader -->
-        
-   
-         
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-                <script src="assets/js/jquery.threesixty.js"></script>
-        
-                <script>
-        
-                    $(document).ready(function(){
-        
-                        var $threeSixty = $('.threesixty');
-                        $threeSixty.threeSixty({
-                            dragDirection: 'horizontal',
-                            useKeys: true,
-        
-                            draggable: true
-                        });
-        
-                        $('.next').click(function(){
-                            $threeSixty.nextFrame();
-                        });
-                        $('.prev').click(function(){
-                            $threeSixty.prevFrame();
-                        });
-                        $threeSixty.on('down', function(){
-                            $('.ui, h1, h2, .label, .examples').stop().animate({opacity:0}, 300);
-                        });
-                        $threeSixty.on('up', function(){
-                            $('.ui, h1, h2, .label, .examples').stop().animate({opacity:1}, 500);
-                        });
-                    });
-                </script>
-         
-          
-          
-          
-              <img src="images/label.png" alt="" class="label"/>
-    
-      
-     </div> 
-      
-    <h1>Product Visualization </h1>
-    
-    
-</div>
-               
-   
-
-          
-
-          
-
-</body>
-</html>    
+    <div class="center">
+        <h1>Product Visualization </h1>
+        <p> Image modeled and rendered by Shlomo Spaeth. Drah your mouse left and right to see it unfold</p>
+    </div>
+  </body>
+</html>
