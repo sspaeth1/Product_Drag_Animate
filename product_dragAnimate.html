@@ -2,70 +2,26 @@
 
 <html>
 
-<head>
+  <head>
+    <title>Sam Shlomo Spaeth | Drag Animate </title>
 
-<title>Sam Shlomo Spaeth | Drag Animate </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+      <meta name="Copyright" content=" 2013">
+      <meta name="Designer" content="Shlomo Sam Spaeth">
+      <meta name="description" content=" Click and Drag to view the product">
+      <meta name="keywords" content="Product interactive">
 
-<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
-<meta name="Copyright" content=" 2013">
-<meta name="Designer" content="Shlomo Sam Spaeth">
-<meta name="description" content=" Click and Drag to view the product">
-<meta name="keywords" content="Product interactive">
-<link href="main.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+ 
+      <link href="assets/css/galleria.classic.css" rel="stylesheet" type="text/css"><!--[if lt IE 7]>
+      .dock img { behavior: url(iepngfix.htc) }</style><![endif]-->
+      <link href="assets/css/main.css">
 
-
-
-<script type="text/javascript" src="js/prototype.js"></script>
-<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
-<script src="galleria/galleria-1.2.6.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<style type="text/css">
-<link href="css/galleria.classic.css" rel="stylesheet" type="text/css"><!--[if lt IE 7]>
-
-
- .dock img { behavior: url(iepngfix.htc) }</style><![endif]-->
-        <link rel="stylesheet" href="css/360/360_main.css">
-        <link href="webfonts/ss-pika.css" rel="stylesheet" />
-
-
-<style type="text/css">
- body{
-   position: absolute;
-   display: inline-block;
-   left: 25%;
-   top:10%;
-   margin: auto;
-   font-family: sans-serif;
- }
- img.logo{
-   position: relative;
-   display: inline;
-   margin: 0;
-   font-family: sans-serif;
-   margin-top: 30px;
- }
- img.logo{
-   position: absolute;
-   display: block;
-   visibility: hidden;
-   left: 25%;
-   margin: auto;
-   font-family: sans-serif;
-   margin-top: 30px;
- }
-</style>
-
-</head>
+  </head>
 
   <body>
-    <img src="assets/img/biochromatic_370_rainbow_horizontal.jpg" width="348" class="logo">
+    <img src="assets/img/biochromatic_370_rainbow_horizontal.jpg" class="logo">
         <div class="threesixty-wrapper">
-          <div class="ui">
-                        <div class="next ss-icon"><img src="assets/img/spons-right-arrow.png" alt="previous" width="20"></div>
-        </div>
-
 
      <div class="threesixty" data-path="assets/img/src/washer_{index}.jpg" data-count="20">
                         <!-- preloader here -->
@@ -108,16 +64,17 @@
                         });
                     </script>
 
-                  <img src="images/label.png" alt="" class="label"/>
+                  <span class="label">Interactive Device (3D rendering)</span>
     </div>
 
     <div class="ui">
-        <div class="prev ss-icon"><img src="assets/img/spons-left-arrow.png" alt="next" width="20" height="42"></div>
-  </div>
-
-    <div>
+            <div class="prev ss-icon"><img src="assets/img/spons-left-arrow.png" alt="previous" width="20" ></div>
+            <div class="next ss-icon"><img src="assets/img/spons-right-arrow.png" alt="next" width="20"></div>
+    </div>
+    <div class="textBox">
         <h1>Product Visualization </h1>
-        <p> Image modeled and rendered by Shlomo Spaeth. Drag your mouse left and right to see it unfold</p>
+        <p> 3D Image modeled and rendered by Shlomo Spaeth.</p>
+        <p> Drag your mouse left and right to see it unfold</p>
     </div>
   </body>
 </html>
