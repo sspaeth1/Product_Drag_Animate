@@ -3,8 +3,7 @@ Product exploration | Click and drag sequence of images - using nick-jonas  jQue
 
 Sample working URL:
 Short URL:	
-http://bit.do/fsCRA
-
+[Link to page](https://biochromatic.com/hosted/drag360/product_dragAnimate.html)
 
 
 Traffic //bit.do/fsCRA-
